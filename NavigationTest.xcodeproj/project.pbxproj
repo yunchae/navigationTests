@@ -12,6 +12,11 @@
 		A5DD053D1EB05A8800D7FFA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD053B1EB05A8800D7FFA8 /* Main.storyboard */; };
 		A5DD053F1EB05A8800D7FFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DD053E1EB05A8800D7FFA8 /* Assets.xcassets */; };
 		A5DD05421EB05A8800D7FFA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DD05401EB05A8800D7FFA8 /* LaunchScreen.storyboard */; };
+		A5DD054A1EB0646800D7FFA8 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD05491EB0646800D7FFA8 /* BlueViewController.swift */; };
+		A5DD054C1EB0677D00D7FFA8 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD054B1EB0677D00D7FFA8 /* RedViewController.swift */; };
+		A5DD054E1EB0796F00D7FFA8 /* BelowFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD054D1EB0796F00D7FFA8 /* BelowFirstViewController.swift */; };
+		A5DD05501EB0797C00D7FFA8 /* BelowSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD054F1EB0797C00D7FFA8 /* BelowSecondViewController.swift */; };
+		A5DD05521EB0798C00D7FFA8 /* BelowThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD05511EB0798C00D7FFA8 /* BelowThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A5DD053E1EB05A8800D7FFA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DD05411EB05A8800D7FFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5DD05431EB05A8800D7FFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DD05491EB0646800D7FFA8 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		A5DD054B1EB0677D00D7FFA8 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		A5DD054D1EB0796F00D7FFA8 /* BelowFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BelowFirstViewController.swift; sourceTree = "<group>"; };
+		A5DD054F1EB0797C00D7FFA8 /* BelowSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BelowSecondViewController.swift; sourceTree = "<group>"; };
+		A5DD05511EB0798C00D7FFA8 /* BelowThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BelowThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				A5DD053E1EB05A8800D7FFA8 /* Assets.xcassets */,
 				A5DD05401EB05A8800D7FFA8 /* LaunchScreen.storyboard */,
 				A5DD05431EB05A8800D7FFA8 /* Info.plist */,
+				A5DD05491EB0646800D7FFA8 /* BlueViewController.swift */,
+				A5DD054B1EB0677D00D7FFA8 /* RedViewController.swift */,
+				A5DD054D1EB0796F00D7FFA8 /* BelowFirstViewController.swift */,
+				A5DD054F1EB0797C00D7FFA8 /* BelowSecondViewController.swift */,
+				A5DD05511EB0798C00D7FFA8 /* BelowThirdViewController.swift */,
 			);
 			path = NavigationTest;
 			sourceTree = "<group>";
@@ -96,8 +111,7 @@
 				TargetAttributes = {
 					A5DD05331EB05A8800D7FFA8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5MEDE49646;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -137,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DD054E1EB0796F00D7FFA8 /* BelowFirstViewController.swift in Sources */,
+				A5DD054C1EB0677D00D7FFA8 /* RedViewController.swift in Sources */,
+				A5DD05501EB0797C00D7FFA8 /* BelowSecondViewController.swift in Sources */,
 				A5DD053A1EB05A8800D7FFA8 /* ViewController.swift in Sources */,
+				A5DD054A1EB0646800D7FFA8 /* BlueViewController.swift in Sources */,
+				A5DD05521EB0798C00D7FFA8 /* BelowThirdViewController.swift in Sources */,
 				A5DD05381EB05A8800D7FFA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5MEDE49646;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NavigationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joe.simpleproject.NavigationTest;
@@ -272,7 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5MEDE49646;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NavigationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joe.simpleproject.NavigationTest;
