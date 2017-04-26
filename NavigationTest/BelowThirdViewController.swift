@@ -44,6 +44,11 @@ class BelowThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func changeBackColor(_ f:(UIColor)->()){
+        f(UIColor.gray)
+    }
+    
 
     /*
     // MARK: - Navigation

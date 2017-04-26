@@ -36,6 +36,14 @@ class BelowSecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if let vc = segue.destination as?BelowThirdViewController{
             vc.delegate = self
+            /*
+            vc.changeBackColor {
+                self.view.backgroundColor = UIColor.red
+            }
+ */
+            vc.changeBackColor {
+                (color:UIColor)->() in self.view.backgroundColor = color
+            }
         }
     }
 
