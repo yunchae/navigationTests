@@ -12,6 +12,12 @@ class RedViewController: UIViewController {
 
     @IBOutlet var receivedLabel: UILabel!
     
+    @IBAction func delegateChangeBackColor(_ sender: Any) {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.bgColor = UIColor.yellow
+        }
+    }
+    
     var receivedValue:String? = nil
     
     @IBAction func changeBackgroundColor(_ sender: Any) {
@@ -27,6 +33,7 @@ class RedViewController: UIViewController {
         if let appdelegate = UIApplication.shared.delegate as? AppDelegate{
             receivedLabel.text = appdelegate.myName
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +41,12 @@ class RedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            self.view.backgroundColor = appDelegate.bgColor
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
