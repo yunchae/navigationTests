@@ -32,11 +32,13 @@ class BelowThirdViewController: UIViewController {
     }
     
     var delegate: BelowSecondViewController?=nil
-    
+    var myFunc:((UIColor)->())? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(changeColor(notification:)), name: NSNotification.Name.init(rawValue: "CHANGE_COLOR"), object: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,8 +46,16 @@ class BelowThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /*
     func changeBackColor(_ f:(UIColor)->()){
+        f(UIColor.gray)
+    }
+ */
+    func changeColor(notification:NSNotification){
+        self.view.backgroundColor = UIColor.blue
+    }
+    
+    func changeBackColor(_ f:@escaping (UIColor)->()){
         f(UIColor.gray)
     }
     

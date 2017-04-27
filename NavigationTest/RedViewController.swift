@@ -14,6 +14,9 @@ class RedViewController: UIViewController {
     
     var receivedValue:String? = nil
     
+    @IBAction func changeBackgroundColor(_ sender: Any) {
+        NotificationCenter.default.post(name:NSNotification.Name.init(rawValue: "CHANGE_COLOR"), object:nil, userInfo:nil)        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
